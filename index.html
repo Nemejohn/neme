@@ -177,7 +177,7 @@
                 tablink.classList.remove("active-link");
             }
             for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
+                tabcontent.classList.remove("active-tab");    
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
@@ -197,6 +197,7 @@
                 mainmenu.style.right = "-400px";
             }
     </script>
+    
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyishYvSqqwGFBsc_UlNxg36QJTUo43w2qZSyJ4KTsON4WQ_LlDXw4Av0Qt4euiGzfe/exec'
         const form = document.forms['submit-to-google-sheet']
