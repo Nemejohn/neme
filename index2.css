@@ -82,7 +82,7 @@ nav i{
 }
 
 .header-text{
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 30px;
 }
 
@@ -425,18 +425,23 @@ form textarea:hover{
     .website a{
         margin-right: 0%;
     }
+    .header{
+        background-position: bottom;
+        height: 97vh;
+    }
 }
 
 @media only screen and (max-width: 1440px){
     .header{
         background-position: bottom;
+        height: 97vh;
     }
     .header-text{
-        margin-top: 50%;
+        margin-top: 30%;
         font-size: 2rem;
     }
     .header-text h1{
-        font-size: 70px;
+        font-size: 60px;
         width: 100%;
     }
     .header-text marquee{
@@ -450,20 +455,28 @@ form textarea:hover{
         width: 100px;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 16px;
     }
     nav i{
         visibility: none;
     }
-    .website a{
-        margin-right: 65%;
+    .website h1{
+        font-size: 50px;
     }
-
+    .website a{
+        padding: 10px 20px;
+    }
+    .service-grid-child{
+        padding: 25px;
+    }
+    .copy-right{
+        padding: 15px 0;
+    }
 }
 
 @media only screen and (max-width: 1030px){
     .header{
-        height: 100vh;
+        height: 97vh;
         background: url(images/myself.png);
         background-position: bottom;
         background-size: cover;
@@ -622,11 +635,11 @@ form textarea:hover{
 
 @media only screen and (max-width: 770px){
     .header-text{
-        margin-top: 50%;
+        margin-top: 40%;
         font-size: 1.5rem;
     }
     .header-text h1{
-        font-size: 50px;
+        font-size: 40px;
         width: 100%;
     }
     .header-text marquee{
@@ -695,7 +708,7 @@ form textarea:hover{
 
 @media only screen and (max-width: 430px){
     .header-text{
-        margin-top: 70%;
+        margin-top: 60%;
         font-size: 1rem;
     }
     .header-text h1{
