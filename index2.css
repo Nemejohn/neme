@@ -32,9 +32,6 @@ body{
 .class{
     opacity: 0.9;
     border: 15px solid orangered;
-    /*border: 70px solid rgb(246, 178, 50);
-    border-right-color: orangered;
-    border-bottom-color: orangered;*/
 }
 
 nav{
@@ -42,6 +39,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .logo{
@@ -97,7 +95,6 @@ nav i{
 
 
 /*------------- ABOUT ---------------*/
-
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -168,6 +165,13 @@ nav i{
     display: block;
 }
 
+.btn.btn_second{
+    background: transparent;
+    border: 2px solid orangered;
+    margin: 20px 0;
+    color: #fff;
+}
+
 
 /*--------------- My Services-----------*/
 /*--------------- My Services-----------*/
@@ -182,6 +186,14 @@ nav i{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 2%;
+}
+
+.service-grid-child .delay2{
+    transition-delay: 200ms;
+}
+
+.service-grid-child .delay3{
+    transition-delay: 400ms;
 }
 
 .service-grid-child{
@@ -293,6 +305,7 @@ nav i{
 .header4{    
     color: white;
     padding-top: 100px;
+
 }
 
 .contact-text{
@@ -468,11 +481,11 @@ form textarea:hover{
         background-repeat: no-repeat;
     }
     .header-text{
-        margin-top: 50%;
-        font-size: 2rem;
+        margin-top: 30%;
+        font-size: 1rem;
     }
     .header-text h1{
-        font-size: 60px;
+        font-size: 40px;
         width: 500px;
     }
     .header-text marquee{
@@ -502,7 +515,7 @@ form textarea:hover{
         margin: 40px;
     }
     nav ul li a{
-        font-size: 30px;
+        font-size: 22px;
     }
     nav ul i{
         position: absolute;
@@ -779,7 +792,7 @@ form textarea:hover{
     
 }
 
-@media(max-width:380px){
+@media only screen and (max-width:380px){
     /*---- Css for My portfolio ------*/
     .website{
         padding: 50px 10px;

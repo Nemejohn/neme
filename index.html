@@ -33,7 +33,7 @@
 
         <!--------------ABOUT SECTION----------------->
 
-        <section id="about">
+        <section class="hidden" id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
@@ -56,9 +56,9 @@
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><Span>2023_(3 months)</Span><br>Frontend Developing</li>
-                                <li><Span>2023_(3 months)</Span><br>UI / UX Designing</li>
-                                <li><Span>2023_(3 months)</Span><br>Web Designing</li>
+                                <li><Span>2023_Present</Span><br>Frontend Developing</li>
+                                <li><Span>2023_Present</Span><br>UI / UX Designing</li>
+                                <li><Span>2023_Present</Span><br>Web Designing</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
@@ -68,6 +68,7 @@
                                 <li><Span>2023_Current</Span><br>Web Designing at Flip to Tech.</li>
                             </ul>
                         </div>
+                        <a href="uiux.html"><button class="btn btn_second">See more..</button></a>
                     </div>
                 </div>
             </div>
@@ -77,7 +78,7 @@
 
         <!----------------- SERVICES-------------------->
 
-        <div class="header3" id="service">
+        <div class="header3 hidden" id="service">
             <div class="container">
                 <h1 class="sub-title">My Services</h1>
                 <div class="service-grid">
@@ -89,7 +90,7 @@
                         </p>
                         <a href="https://youtu.be/B-ytMSuwbf8?si=HQMuRkygKED4g5Ws">Learn more</a>
                     </div>
-                    <div class="service-grid-child">
+                    <div class="service-grid-child delay2">
                         <i class='bx bx-crop' id="code"></i>       
                         <h2>UI/UX Design / Mobile apps</h2>
                         <p>UI / UX designer with a passion for designing beautiful and functional
@@ -97,7 +98,7 @@
                         </p>
                         <a href="https://youtu.be/c9Wg6Cb_YlU?si=9XXniZGCQninePKA">Learn more</a>
                     </div>
-                    <div class="service-grid-child">
+                    <div class="service-grid-child delay3">
                         <i class='bx bxs-purchase-tag-alt' id="code"></i>
                         <h2>Frontend Developing.</h2>
                         <p>Frontend developer, skilled and passionate about creating current and
@@ -112,7 +113,7 @@
 
         <!-------------- Project ------------------->
 
-        <div class="header5" id="my-work">
+        <div class="header5 hidden" id="my-work">
             <div class="website">
                 <h1>Check out the school site I designed.</h1>
                 <a href="https://neme-john.webflow.io"><p><i class='bx bx-link-external'></i> Visit site...</p></a>
@@ -122,7 +123,7 @@
 
          <!------------- My Contact----------------->
 
-         <div class="header4" id="contact">
+         <div class="header4 hidden" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-text">
@@ -160,7 +161,7 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script>
+    <script defer>
         var typed = new Typed(".auto-type", {
             strings: ["Frontend Developer, UI/UX Designer, and Web Designer, with three months of experience working with JavaScript, HTML/CSS, Web Flow and Figma, passionate to deliver and develop applications and experiences on the web to client satisfaction. With good knowledge of coding specialized in creating exceptional, current and responsive websites.",],
             typeSpeed: 70,
@@ -187,7 +188,6 @@
             var header3 = document.getElementById("service");
             var mainmenu = document.getElementById("mainmenu");
             var body = document.getElementById("body");
-
             
             function openmenu(){
                 mainmenu.style.right = "0";
@@ -215,4 +215,5 @@
             .catch(error => console.error('Error!', error.message))
         })
     </script>
+    
 </html>

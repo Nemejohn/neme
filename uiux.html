@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="uiux.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="my pics.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <!------------- UI UX CONTAINER----------------->
+        <div class="uiux_container">
+            <span>
+                <h2>UI/UX DESIGNS</h2>
+                <a href="index.html"><div class="home">Main Menu</div></a>
+            </span>
+        </div>
+        
+        <!------------- Project Header----------------->
+
+        <div class="project hidden">
+            <h1><i class='bx bxs-purchase-tag-alt'></i>Featured <span>DESIGNS</span></h1>
+            <div class="project_grid">
+                <div class="phone_size">
+                    <div class="image_container"><img src="images/Blog_UX_UI_Trends.png" alt=""></div>
+                    <div class="image_grid">
+                        <div class="one"><img src="images/Blog_UX_UI_Trends.png" alt=""></div>
+                        <h2>Frabricating Quality Designs</h2>
+                    </div>
+                    <div class="icon_container">
+                        <a href="https://www.instagram.com/nemejohn62"><div class="icon"><i class='bx bxl-instagram'></i></div></a>
+                        <div class="p">Instagram Page</div>
+                    </div>
+                </div>
+                <div class="phone_size two">
+                    <div class="image_container"><img src="images/anotherthree.png" alt=""></div>
+                    <div class="image_grid">
+                        <div class="one"><img src="images/anotherthree.png" alt=""></div>
+                        <h2>Projecting Amazing E-commerce Designs</h2>
+                    </div>
+                    <div class="icon_container">
+                        <a href="https://www.linkedin.com/in/neme-john-a6bb852a2"><div class="icon"><i class='bx bxl-linkedin-square'></i></div></a>
+                        <div class="p">Linkedin Page</div>
+                    </div>
+                </div>
+                <div class="phone_size">
+                    <div class="image_container"><img src="images/iotworlds-UI-UX-designer.png" alt=""></div>
+                    <div class="image_grid">
+                        <div class="one"><img src="images/iotworlds-UI-UX-designer.png" alt=""></div>
+                        <h2>Publishing responsive Phone & Desktop sizes</h2>
+                    </div>
+                    <div class="icon_container">
+                        <a href="https://www.twitter.com/johnNeme35747"><div class="icon"><i class='bx bxl-twitter'></i></div></a>
+                        <div class="p">Twitter Page</div>
+                    </div>
+                </div>
+                <div class="phone_size">
+                    <div class="image_container"><img src="images/anotherone.png" alt=""></div>
+                    <div class="image_grid">
+                        <div class="one"><img src="images/anotherone.png" alt=""></div>
+                        <h2>Phones Frame Work</h2>
+                    </div>
+                    <div class="icon_container">
+                        <a href="https://www.facebook.com/profile.php?id=100091489970441"><div class="icon"><i class='bx bxl-facebook-circle'></i></div></a>
+                        <div class="p">Facebook Page</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------- Display Project----------------->
+
+        <div class="pratical_heading hidden">
+        </div>
+
+        <!------------- My Contact----------------->
+
+        <div class="header4 hidden" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-text">
+                        <h1 class="h1">Contact Me</h1>
+                        <p><a href="tel:+2349118166827"><i class='bx bx-phone' id="code"></i></a> +234-911-8166-827.</p>
+                        <p><a href="https://wa.me/+2349118166827/?text= Hello i'm a client, help here please?
+                            Note : : Please, this text cannot be change due to user accessibility to the agent.
+                            "><i class='bx bxl-whatsapp' id="code"></i></a> Please locate me through whatsapp.</p>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/profile.php?id=100091489970441"><i class='bx bxl-facebook-circle' id="code"></i></a>
+                            <a href="https://www.linkedin.com/in/neme-john-a6bb852a2"><i class='bx bxl-linkedin-square' id="code"></i></a>
+                            <a href="https://www.twitter.com/johnNeme35747"><i class='bx bxl-twitter' id="code"></i></a>
+                            <a href="https://www.instagram.com/nemejohn62"><i class='bx bxl-instagram' id="code"></i></a>
+                        </div>
+                        <a href="Nemejohn CV.pdf" download><button class="btn btn2">Download CV</button></a>
+                    </div>
+                    <div class="contact-input">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Full Name" required>             
+                            <input type="email" name="Email" placeholder="Your Email" required>              
+                            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message....." required></textarea>
+                            <button class="btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>               
+            </div>
+                <div class="copy-right">
+                    <p>copyright @ 2023 with love <i class='bx bxs-heart'></i> by Neme John</p>
+                </div>
+        </div>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyishYvSqqwGFBsc_UlNxg36QJTUo43w2qZSyJ4KTsON4WQ_LlDXw4Av0Qt4euiGzfe/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully..."
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log(entry)
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else{
+                        entry.target.classList.remove('show');
+                    }                      
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        </script>
+    </body>
+</html>
