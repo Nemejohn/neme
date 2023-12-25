@@ -18,10 +18,10 @@
         
         <!------------- Project Header----------------->
 
-        <div class="project hidden">
+        <div class="project">
             <h1><i class='bx bxs-purchase-tag-alt'></i>Featured <span>DESIGNS</span></h1>
             <div class="project_grid">
-                <div class="phone_size">
+                <div class="phone_size hidden">
                     <div class="image_container"><img src="images/Blog_UX_UI_Trends.png" alt=""></div>
                     <div class="image_grid">
                         <div class="one"><img src="images/Blog_UX_UI_Trends.png" alt=""></div>
@@ -32,7 +32,7 @@
                         <div class="p">Instagram Page</div>
                     </div>
                 </div>
-                <div class="phone_size two">
+                <div class="phone_size two hidden">
                     <div class="image_container"><img src="images/anotherthree.png" alt=""></div>
                     <div class="image_grid">
                         <div class="one"><img src="images/anotherthree.png" alt=""></div>
@@ -43,7 +43,7 @@
                         <div class="p">Linkedin Page</div>
                     </div>
                 </div>
-                <div class="phone_size">
+                <div class="phone_size right">
                     <div class="image_container"><img src="images/iotworlds-UI-UX-designer.png" alt=""></div>
                     <div class="image_grid">
                         <div class="one"><img src="images/iotworlds-UI-UX-designer.png" alt=""></div>
@@ -54,7 +54,7 @@
                         <div class="p">Twitter Page</div>
                     </div>
                 </div>
-                <div class="phone_size">
+                <div class="phone_size right">
                     <div class="image_container"><img src="images/anotherone.png" alt=""></div>
                     <div class="image_grid">
                         <div class="one"><img src="images/anotherone.png" alt=""></div>
@@ -75,10 +75,10 @@
 
         <!------------- My Contact----------------->
 
-        <div class="header4 hidden" id="contact">
+        <div class="header4" id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="contact-text">
+                    <div class="contact-text hidden">
                         <h1 class="h1">Contact Me</h1>
                         <p><a href="tel:+2349118166827"><i class='bx bx-phone' id="code"></i></a> +234-911-8166-827.</p>
                         <p><a href="https://wa.me/+2349118166827/?text= Hello i'm a client, help here please?
@@ -92,7 +92,7 @@
                         </div>
                         <a href="Nemejohn CV.pdf" download><button class="btn btn2">Download CV</button></a>
                     </div>
-                    <div class="contact-input">
+                    <div class="contact-input right">
                         <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Full Name" required>             
                             <input type="email" name="Email" placeholder="Your Email" required>              
@@ -140,6 +140,20 @@
 
             const hiddenElements = document.querySelectorAll('.hidden');
             hiddenElements.forEach((el) => observer.observe(el));
+
+            const reserve = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log(entry)
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('unshow');
+                    } else{
+                        entry.target.classList.remove('unshow');
+                    }                      
+                });
+            });
+
+            const rightelements = document.querySelectorAll('.right');
+            rightelements.forEach((el) => reserve.observe(el));
         </script>
     </body>
 </html>
