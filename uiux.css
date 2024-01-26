@@ -31,44 +31,48 @@
     transform: translateX(0);
 }
 
-.uiux_container{
-    background:linear-gradient( rgba(0,0,0,0.45),rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45),rgba(0,0,0,0.45)) ,url(images/uiuxdesign.png);
-    height: 45vh;
+
+/* ------ UI/UX Container ------- */
+
+.uiux_container {
+    background: url(images/uiuxdesign.png);
+    height: 50vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    display: flex;
 }
 
-.uiux_container h2{
-    font-size: 5rem;
-    color: #fff;
+.uiux_container .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-a .home{
+.uiux_container .container h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.uiux_container .container a{
     color: #fff;
-    font-size: 17px;
-    font-weight: 600;
     text-decoration: none;
-}
-
-.home{
-    display: inline-block;
-    padding: 10px 20px;
-    background: transparent;
-    border-radius: 7px;
-    margin-top: 10px;
+    font-size: 20px;
     border: 2px solid #fff;
-    transition: all 0.5s ease;
+    padding: 8px 20px;
+    transition: all ease 0.5s;
 }
 
-.home:hover{
-    background: green;
+.uiux_container .container a:hover{
+    background: brown;
+    cursor: pointer;
 }
+
+/* ---- PROJECT ------ */
 
 .project{
     width: 100%;
