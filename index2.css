@@ -519,7 +519,7 @@ html{
 
 @media (max-width:555px){
     .background{
-        height: 100vh;
+        height: 80vh;
     }
     .background .container h1{
         font-size: 32px;
