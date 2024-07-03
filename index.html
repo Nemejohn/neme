@@ -1,215 +1,334 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="index2.css">
+        <title>Anglican Church Of Redemption</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="shortcut icon" href="my pics.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="index2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="shortcut icon" href="images/anglicanlogo2.png" type="image/x-icon">
     </head>
-    <body>
-        <div class="header" id="home">
+    <body id="body">
+        <nav class="main_navbar">
             <div class="container">
-                <nav>
-                    <img src="images/my-logo3.png" class="logo" id="logo">
-                    <ul id="mainmenu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#my-work">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i title="Close Menu" class='bx bx-x' onclick="closemenu()" id="close"></i>
-                    </ul>
-                    <i title="Menu" class='bx bx-menu' onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text" id="header-text">
-                    <marquee style="width: 30%;" behavior="" direction=""><p>WEB DESIGNER, FRONTEND DEVELOPER, UI / UX DESIGNER </p></marquee>
-                    <h1><span style="color: yellow;">H</span>ello,<br> I'm <span>John</span> From Nigeria.</h1>
-                </div>
-            </div>
-        </div>
-
-        <!--------------ABOUT SECTION----------------->
-
-        <section class="hidden" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/me.png" alt="">
+                <div class="nav-bar">
+                    <div class="group-one">
+                        <div class="image"><a href="index.html"><img src="images/anglicanlogo2.png"></a></div>
+                        <div class="second-image">
+                            <h3>DIOCESE OF LAGOS WEST</h3>
+                            <P>(Anglican Communion)</P>
+                            <h4>Anglican Church Of Redemption WhiteSand</h4>
+                            <h4>(Redemption Arena)</h4>
+                            <span><em>Tell the Story, Keep the Faith.</em></span>
+                            <div class="location"><i class='bx bxs-map'></i> (Fagbile Phase 3) 7, Risikatu Opebiyi Street, Ijegun, Lagos State.</div>
+                        </div>   
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <h1><span class="auto-type"></span></h1>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experiences</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
+                    <div class="flex">
+                        <div class="cover">
                             <ul>
-                                <li><Span>Frontend Developing</Span><br>Coding amenable and flexible websites.</li>
-                                <li><Span>UI/UX</Span><br>Bringing awesome designs to user interface.</li>
-                                <li><Span>Web Design</Span><br>Creating good designs suitable for responsive website.</li>
+                                <a href="index.html"><li class="active">Home</li></a>
+                                <a href="about.html"><li>About Us</li></a>
+                                <a href="giving.html"><li>Giving</li></a>
+                                <a href="let's-pray.html"><li>Let's Pray</li></a>
+                                <a href="leaders.html"><li>Our Learders</li></a>
+                                <a href="events.html"><li>Church Events</li></a>
+                                <a href="ministry.html"><li>Ministry</li></a>
+                                <a href="contact_us.html"><li>Contact Us</li></a>
                             </ul>
+                            <a href="i'm-newpage.html"><div class="new">I'm New Here</div></a>
                         </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><Span>2023_Present</Span><br>Frontend Developing</li>
-                                <li><Span>2023_Present</Span><br>UI / UX Designing</li>
-                                <li><Span>2023_Present</Span><br>Web Designing</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><Span>2023_Current</Span><br>Frontend Developing at Flip to Tech.</li>
-                                <li><Span>2023_Current</Span><br>UI / UX Designing at Flip to Tech.</li>
-                                <li><Span>2023_Current</Span><br>Web Designing at Flip to Tech.</li>
-                            </ul>
-                        </div>
-                        <a href="uiux.html"><button class="btn btn_second">See more..</button></a>
+                        <div class="close" onclick="closing()"><i class='bx bx-x'></i> </div>
                     </div>
+                    <h6 class="menu" onclick="mainmenu()"><i class='bx bx-menu'></i></h6>
                 </div>
             </div>
+        </nav>
 
-        </section>
-
-        <!----------------- SERVICES-------------------->
-
-        <div class="header3 hidden" id="service">
+        <div class="background">
             <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="service-grid">
-                    <div class="service-grid-child">
-                        <i class='bx bx-code-alt' id="code"></i>
-                        <h2>Web Design</h2>
-                        <p>Web designer, specialized at creating reactive, amenable and flexible 
-                           websites. Have no fear of imperfection because I have you covered.
-                        </p>
-                        <a href="https://youtu.be/B-ytMSuwbf8?si=HQMuRkygKED4g5Ws">Learn more</a>
-                    </div>
-                    <div class="service-grid-child delay2">
-                        <i class='bx bx-crop' id="code"></i>       
-                        <h2>UI/UX Design / Mobile apps</h2>
-                        <p>UI / UX designer with a passion for designing beautiful and functional
-                           user interface with good knowledge of creating media / social apps.
-                        </p>
-                        <a href="https://youtu.be/c9Wg6Cb_YlU?si=9XXniZGCQninePKA">Learn more</a>
-                    </div>
-                    <div class="service-grid-child delay3">
-                        <i class='bx bxs-purchase-tag-alt' id="code"></i>
-                        <h2>Frontend Developing.</h2>
-                        <p>Frontend developer, skilled and passionate about creating current and
-                           interactive applications and experiences on the web. 
-                        </p>
-                        <a href="https://youtu.be/G3e-cpL7ofc?si=Fxzz9fddWTeFGG0">Learn more</a>
-                    </div>
-                </div>
-            </div>
+                <h1>Anglican Church Of Redemption Whitesand</h1>
+                <h1>our year of <span>Jubiliation</span></h1>
+                <p>Fight the good fight of the faith. Take hold of the eternal life to which you were called 
+                    when you made your good confession in the presence of many witnesses - <span>1 Timothy 6:12.</span></p>
+                <a href="donation.html"><button>Donate <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>         
         </div>
 
-        <!-------------- Project ------------------->
-
-        <div class="header5 hidden" id="my-work">
-            <div class="website">
-                <h1>Check out the school site I designed.</h1>
-                <a href="https://neme-john.webflow.io"><p><i class='bx bx-link-external'></i> Visit site...</p></a>
-            </div>
-        </div>
-
-        <!------------- My Contact----------------->
-
-        <div class="header4 hidden" id="contact">
+        <div class="roles">
             <div class="container">
-                <div class="row">
-                    <div class="contact-text">
-                        <h1 class="h1">Contact Me</h1>
-                        <p><a href="tel:+2349118166827"><i class='bx bx-phone' id="code"></i></a> +234-911-8166-827.</p>
-                        <p><a href="https://wa.me/+2349118166827/?text= Hello i'm a client, help here please?
-                            Note : : Please, this text cannot be change due to user accessibility to the agent.
-                            "><i class='bx bxl-whatsapp' id="code"></i></a> Please locate me through whatsapp.</p>
-                        <div class="icons">
-                            <a href="https://www.facebook.com/profile.php?id=100091489970441"><i class='bx bxl-facebook-circle' id="code"></i></a>
-                            <a href="https://www.linkedin.com/in/neme-john-a6bb852a2"><i class='bx bxl-linkedin-square' id="code"></i></a>
-                            <a href="https://www.twitter.com/johnNeme35747"><i class='bx bxl-twitter' id="code"></i></a>
-                            <a href="https://www.instagram.com/nemejohn62"><i class='bx bxl-instagram' id="code"></i></a>
-                        </div>
-                        <a href="Nemejohn CV.pdf" download><button class="btn btn2">Download CV</button></a>
+                <div class="media">
+                    <div class="media_group">
+                        <div class="icon"><i class='bx bx-church'></i></div>
+                        <span>Church</span>
+                        <p>Join (ACRW) as we gather every Sunday at the body of Christ let's connect to our Father by Faith.</p>
                     </div>
-                    <div class="contact-input">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Full Name" required>             
-                            <input type="email" name="Email" placeholder="Your Email" required>              
-                            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message....." required></textarea>
-                            <button class="btn">Submit</button>
-                        </form>
-                        <span id="msg"></span>
+                    <div class="media_group">
+                        <div class="icon"><i class="fa-regular fa-heart"></i></div>
+                        <span>Good Health</span>
+                        <p>(ACRW) we're interested in the health of the community. Come let's give you the health you deserve physically and spiritually.</p>
                     </div>
-                </div>               
-            </div>
-                <div class="copy-right">
-                    <p>copyright @ 2023 with love <i class='bx bxs-heart'></i> by Neme John</p>
+                    <div class="media_group">
+                        <div class="icon"><i class='bx bxs-bible'></i></div>
+                        <span>Let's Pray</span>
+                        <p>We the (ACRW) focus on the prayer lives of christians. Do you have a prayer request kindly visit our let's pray page to get started.</p>
+                    </div>
+                    <div class="media_group">
+                        <div class="icon"><i class='bx bxs-map'></i></div>
+                        <span>Plan a visit</span>
+                        <p>We would love for you to be our guest as we gather every weekend as a church to be inspired to follow Jesus.</p>
+                    </div>
+                    <div class="media_group">
+                        <div class="icon"><i class="fa-regular fa-handshake"></i></div>
+                        <span>Walfare</span>
+                        <p>Connect and Join (ACRW) as a church to support the walfare of the needy and draw them closer to God.</p>
+                    </div>
                 </div>
+            </div>
         </div>
 
+        <div class="difference">
+            <div class="container">
+                <h1>Let's Make A Difference Today</h1>
+                <div class="align">
+                    <div class="hold">
+                        <div class="icons"><i class="fa-solid fa-phone"></i></div>
+                        <h3>Contact Us</h3>
+                        <p>Do you have any questions or is anything troubling your mind.Please Contact us we would love to hear from you.</p>
+                        <a href="contact_us.html"><button class="btn">Contact Us</button></a>
+                    </div>
+                    <div class="hold">
+                        <div class="icons"><i class="fa-solid fa-sack-dollar"></i></div>
+                        <h3>Donate</h3>
+                        <p>Donate to Anglican Church of Redemption WhiteSand to help the church of God Grow in one Love.</p>
+                        <a href="donation.html"><button class="btn">Donate Now</button></a>
+                    </div>
+                    <div class="hold">
+                        <div class="icons"><i class='fa fa-handshake'></i></div>
+                        <h3>Be a Member</h3>
+                        <p>Do you want to be a Member of ACRW to partake in God's overwhelming love, Click the button to join now.</p>
+                        <a href="membership.html"><button class="btn">Join Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about_container">
+                <h1>About Us</h1>
+                <div class="about-flex">
+                    <div class="about-carry">
+                        <div class="number">
+                            <div class="no">01</div>
+                        </div>
+                        <div class="about-text">
+                            <h1>History</h1>
+                            <p>
+                                The establishment of the Church was conceived by EFAC Oke-Afa under the leadership of Bro. Paul Ebigwe in 2012 to ease the burden of worshipers who then had to find their ways <span>from here to Oke-Afa every Sunday to worship.</span>
+                            </p>
+                            <a href="about.html"><button>read more <i class="fa-solid fa-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="about-carry column">
+                        <div class="about-text">
+                            <h1>Vision</h1>
+                            <p>
+                                Our vision as ACRW is to be the leading Diocese in the Church of Nigeria in preparing <span>this Nation for the second coming of our Lord Jesus Christ.</span>
+                            </p>
+                            <a href="about.html"><button>read more <i class="fa-solid fa-arrow-right"></i></button></a>
+                        </div>
+                        <div class="number">
+                            <div class="no">02</div>
+                        </div>
+                    </div>
+                    <div class="about-carry">
+                        <div class="number">
+                            <div class="no">03</div>
+                        </div>
+                        <div class="about-text">
+                            <h1>Mission</h1>
+                            <p>
+                                Our Mission is to ensure a sustained growth in the number of Churches and worshippers within the Diocese.
+                                To continue to enhance the mode of worship, <span>teach and preach the word of God in all our churches.</span> 
+                            </p>
+                            <a href="about.html"><button>read more <i class="fa-solid fa-arrow-right"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="about-carry column">
+                        <div class="about-text">
+                            <h1>Diosecan Anthem</h1>
+                            <p>
+                                Our Mission is to ensure a sustained growth in the number of Churches and worshippers within the Diocese.
+                                To continue to enhance the mode of worship, <span>teach and preach the word of God in all our churches</span> 
+                            </p>
+                            <a href="about.html"><button>read more <i class="fa-solid fa-arrow-right"></i></button></a>
+                        </div>
+                        <div class="number">
+                            <div class="no">04</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="distribute">
+            <div class="container">
+                <div class="mission">
+                    <h1>Mission</h1>
+                    <p>
+                        Our Mission is to ensure a sustained growth in the number of Churches and worshippers within the Diocese.
+                        To continue to enhance the mode of worship, <span>teach and preach the word of God in all our churches</span> 
+                    </p>
+                    <a href="about.html"><button class="btn">Read More</button></a>
+                </div>
+                <div class="mission church">
+                    <h1>Church History</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Voluptatibus sint quae 
+                        perspiciatis ducimus quis totam fugiat error 
+                        eveniet impedit officia perferendis voluptas non, 
+                        beatae neque reiciendis! Quos ad praesentium quo.
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Voluptatibus sint quae 
+                        perspiciatis ducimus quis totam fugiat error 
+                        <span>eveniet impedit officia perferendis voluptas non, 
+                        beatae neque reiciendis! Quos ad praesentium quo.</span>
+                    </p>
+                    <a href="about.html"><button class="btn">Read More</button></a>
+                </div>
+                <div class="mission">
+                    <h1>Vision</h1>
+                    <p>
+                        Our vision as ACRW is to be the leading Diocese in the Church of Nigeria in preparing <span>this Nation for the second coming of our Lord Jesus Christ.</span>
+                    </p>
+                    <a href="about.html"><button class="btn">Read More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="volunteer">
+            <div class="container">
+                <h1>Our Optimistic volunteers</h1>
+                <div class="grid_volunteer">
+                    <div class="carry">
+                        <div class="naming">
+                           <div class="filter">
+                                <span>ACRW Teacher</span>
+                                <h3>Uche Lazarus</h3>
+                                <p>Jesus the only one of Israel who is, who was and who is to come.</p>
+                                <span>uchelazarus898@gmail.com</span>
+                           </div>
+                           <div class="icons">
+                                <div class="icon"><a href=""><i class='bx bxl-whatsapp'></i></a></div>
+                                <div class="icon"><a href=""><i class='bx bxl-facebook-circle'></i></a></div>
+                                <div class="icon"><a href=""><i class='bx bxl-instagram'></i></a></div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="carry .carry2">
+                        <div class="naming">
+                           <div class="filter">
+                                <span>ACRW Teacher</span>
+                                <h3>Uche Lazarus</h3>
+                                <p>Jesus the only one of Israel who is, who was and who is to come.</p>
+                                <span>uchelazarus898@gmail.com</span>
+                           </div>
+                           <div class="icons">
+                                <div class="icon"><a href=""><i class='bx bxl-whatsapp'></i></a></div>
+                                <div class="icon"><a href=""><i class='bx bxl-facebook-circle'></i></a></div>
+                                <div class="icon"><a href=""><i class='bx bxl-instagram'></i></a></div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="carry">
+                        <div class="naming">
+                           <div class="filter">
+                                <span>ACRW Teacher</span>
+                                <h3>Uche Lazarus</h3>
+                                <p>Jesus the only one of Israel who is, who was and who is to come.</p>
+                                <span>uchelazarus898@gmail.com</span>
+                           </div>
+                           <div class="icons">
+                                <div class="icon"><a href=""><i class='bx bxl-whatsapp'></i></a></div>
+                                <div class="icon"><a href=""><i class='bx bxl-facebook-circle'></i></a></div>
+                                <div class="icon"><a href=""><i class='bx bxl-instagram'></i></a></div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>--->
         
-    </body>
+        <footer>
+            <div class="container">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="giving.html">Giving</a></li>
+                        <li><a href="let's-pray.html">Let's Pray</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li><a href="leaders.html">Leaders</a></li>
+                        <li><a href="events.html">Church Event</a></li>
+                        <li><a href="ministry.html">Ministry</a></li>
+                        <li><a href="donation.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i> Churchofredemption whitesand@gmail.com</a></li>
+                        <li><a href="tel:234-703-517-7760"><i class="fa fa-phone"></i> +234-703-517-7760</a></li>
+                        <li><i class="bx bx-map"></i> (Fagbile Phase 3) 7, Risikatu Opebiyi Street, Ijegun, Lagos State.</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="links">
+                        <a href="https://www.facebook.com/profile.php?id=61559888981935"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://chat.whatsapp.com/JRXuI6gBTMd8hxAoLeaYLS"><i class="fab fa-whatsapp"></i></a>
+                    </div>  
+                </div>
+            </div>
+        </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <script defer>
-        var typed = new Typed(".auto-type", {
-            strings: ["Frontend Developer, UI/UX Designer, and Web Designer, with three months of experience working with JavaScript, HTML/CSS, Web Flow and Figma, passionate to deliver and develop applications and experiences on the web to client satisfaction. With good knowledge of coding specialized in creating exceptional, current and responsive websites.",],
-            typeSpeed: 70,
-            backspeed: 150,
-            loop: false
-        });
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");    
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-        var header = document.getElementById("home");
-            var header2 = document.getElementById("about");
-            var header3 = document.getElementById("service");
-            var mainmenu = document.getElementById("mainmenu");
-            var body = document.getElementById("body");
+        <div class="copy-right">
+            <div class="container">    
+                <div class="hold">
+                    <i class="fa-solid fa-cross"></i>
+                    <p>(Fagbile Phase 3) 7, Risikatu Opebiyi Street, Ijegun, Lagos State.</p>
+                    <p> ©2024 Anglican Church Of Redemption Whitesand</p>
+                </div>
+                <a href="#body"><div class="arrow"><i class='bx bx-up-arrow-alt'></i></div></a>
+            </div>
+        </div>
+        
+        <script>
+            const menu = document.querySelector(".menu");
+            const flex = document.querySelector(".flex");
+            const close = document.querySelector(".close");
+            const new_page = document.getElementById("new_page");
+            const cancel = document.getElementById("cancel");
             
-            function openmenu(){
-                mainmenu.style.right = "0";
+            function mainmenu(){
+                flex.style.visibility = "visible";
+                flex.style.overflow = "visible";
+                flex.style.top = "0";
             }
-            function closemenu(){
-                mainmenu.style.right = "-400px";
+            function closing(){ 
+                flex.style.top = "-500px";
             }
-    </script>
-    
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyishYvSqqwGFBsc_UlNxg36QJTUo43w2qZSyJ4KTsON4WQ_LlDXw4Av0Qt4euiGzfe/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully..."
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-    
+            function canceling(){
+                new_page.style.display = "none";
+            }
+        </script>
+
+    </body>
 </html>
